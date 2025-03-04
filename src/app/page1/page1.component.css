@@ -17,6 +17,7 @@
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;
 
+
 }
 
 
@@ -305,19 +306,27 @@
 
 }
 
-.off-scroll {
-    opacity: 0;
-
+.background-menu-light {
+    background: linear-gradient(45deg, #97c9ed, #96bafd, #adcbde, #a0b9e1);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s infinite ease-in-out;
 }
+
+.background-menu-dark {
+    background: linear-gradient(45deg, #161328, #212237, #2a2353, #1d1e30);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s infinite ease-in-out;
+}
+
+.off-flex {}
 
 .on-scroll {
     opacity: 1;
-    background: linear-gradient(45deg, #161328, #212237, #2a2353, #1d1e30);
-    background-size: 200% 200%;
-    animation: gradientAnimation 15s infinite ease-in-out;
     position: fixed;
-    transition: all 0.7s ease;
+    transition: all 0.7s ease !important;
+
 }
+
 
 .flex-mobile {
     padding: 8px;

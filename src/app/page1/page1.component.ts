@@ -19,33 +19,54 @@ export class Page1Component implements OnInit, OnDestroy {
   constructor(private renderer: Renderer2, private el: ElementRef) { }
 
   ngOnInit(): void {
-    // Obtém o elemento assim que o componente for inicializado
     this.menu = document.querySelector('#containerId');
-
-    // Adiciona o listener de scroll
     window.addEventListener('scroll', this.activeScroll);
   }
 
   ngOnDestroy(): void {
-    // Remove o listener de scroll quando o componente for destruído
     window.removeEventListener('scroll', this.activeScroll);
   }
 
+
   // Método para adicionar/remover a classe 'blur' no scroll
-
   private activeScroll = () => {
-   
-    const myDivContainer = this.el.nativeElement.querySelector('.container');
-    
-    if (this.menu) {
-      this.menu.classList.toggle('off-scroll', window.scrollY > 0);
-      this.menu.classList.toggle('on-scroll', window.scrollY > 0);
-     
-      
-      
-      
-    }
+    if (!this.menu) return;
+    console.log(window.scrollY);
+    if (window.scrollY > 0) { 
+      this.menu.classList.add('on-scroll');
 
+      this.menu.classList.remove('off-scroll');
+      
+    } else {
+      this.menu.classList.remove('off-scroll');
+      this.menu.classList.add('on-scroll');
+      
+      
+    } 
+
+      
+      // Ajusta a cor com base no modo ativo
+      if (this.isDarkMode) {
+        this.menu.classList.remove('background-menu-dark');
+        this.menu.classList.add('background-menu-light');
+        console.log('dark')
+      } else {
+        this.menu.classList.remove('background-menu-light');
+        this.menu.classList.add('background-menu-dark');
+        console.log('light')
+      } 
+
+    if (window.scrollY == 0) { 
+      
+    
+    // Ajusta a cor com base no modo ativo
+    if (this.isDarkMode) {
+      this.menu.classList.remove('background-menu-light');
+    } else {
+      this.menu.classList.remove('background-menu-dark');
+
+    }
+  } 
   }
 
 
@@ -86,6 +107,7 @@ export class Page1Component implements OnInit, OnDestroy {
 
 
     this.isDarkMode = !this.isDarkMode;
+    this.activeScroll();
 
 
     if (this.isDarkMode) {
@@ -127,9 +149,11 @@ export class Page1Component implements OnInit, OnDestroy {
 
       this.renderer.addClass(myDivDark2Mobile, 'dark-mode-toggle');
 
-
+    
 
     }
+    this. activeScroll;
+
   }
 
 
