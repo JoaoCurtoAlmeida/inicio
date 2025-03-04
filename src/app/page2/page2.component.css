@@ -1,0 +1,152 @@
+.container {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(219, 219, 219);
+
+}
+
+
+
+
+.container-flex {
+    display: flex;
+    width: 90%;
+    gap: 5px;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    border-radius: 2px;
+
+
+
+}
+
+.flex {
+    margin: 5px;
+    width: auto;
+    height: auto;
+}
+
+.text-flex {
+    padding-bottom: 50px;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px rgba(0, 0, 0, 0.125) solid;
+    background-color: rgba(236, 236, 236, 0.896);
+    border-radius: 5px;
+}
+
+.contatos {
+    display: flex;
+    justify-content:start; /* Alinha horizontalmente */
+    align-items: center;
+    padding: 5px;
+    margin-top: 15px;
+    
+}
+.curriculo {
+    border: 1px rgb(71, 71, 71) solid;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: rgba(236, 236, 236, 0.896);
+}
+
+.curriculo:hover {
+    background-color: rgba(173, 173, 173, 0.067);
+}
+
+ .pi-github, .pi-linkedin, .fa-envelope {
+    font-size: 25px;
+    color: rgb(71, 71, 71);
+    padding: 5px;
+    margin-left: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+
+.img-joao {
+    width: 220px;
+    height: 220px;
+    border: 5px rgba(0, 0, 0, 0.121) solid;
+    object-fit: cover;
+    border-radius: 100%;
+
+
+}
+
+.borda-img {
+    display: block;
+    padding: 5px;
+
+}
+
+.text1 {
+    display: block;
+    color: rgba(14, 14, 14, 0.847);
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.text2 {
+    color: rgba(1, 1, 1, 0.784);
+    font-size: 18px;
+
+}
+
+
+
+@media screen and (max-width: 960px) {
+    .container {
+        margin-top: 100%;
+    }
+
+    .container-flex {
+        flex-direction: column;
+        width: 90%;
+        align-items: center;
+
+
+    }
+
+    .flex-img {
+        justify-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        width: 70%;
+    }
+
+    .img-joao {
+        width: 130px;
+        height: 130px;
+
+    }
+
+    .text-flex {
+        justify-items: center;
+        justify-content: center;
+        padding-bottom: 60px;
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        gap: 10px;
+        text-align: center;
+
+    }
+
+    .text1 {
+
+        padding-top: 30px;
+    }
+    .contatos {
+        
+        justify-content:center; /* Alinha horizontalmente */
+       
+        
+    }
+}

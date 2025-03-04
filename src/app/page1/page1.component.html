@@ -1,0 +1,120 @@
+<!--                  Web Containers                      -->
+
+
+<nav id="containerId" class="container ">
+
+    <!-- mobile -->
+    <div class="menu-flex" (click)="menuMode()">
+        <i class="pi pi-bars menu" style="font-size: 1.4rem"></i>
+
+    </div>
+
+    <div class="container-nome">
+        <div class="flex-nome">
+            <span>João Victor Curto de Almeida</span>
+        </div>
+    </div>
+    <div class="flex flex-inicio hover-right off-flex">
+        <span>Início</span>
+    </div>
+    <div class="flex color-text border off-flex">
+        <span>Projetos</span>
+    </div>
+    <div class="flex color-text border off-flex">
+        <span>Experiência</span>
+    </div>
+    <div class="flex color-text border off-flex">
+        <span>Sobre mim</span>
+    </div>
+
+    <div class="contatos off-flex" style="color: var(--text-color)">
+        <div class="flex-icon">
+            <i class="pi pi-github"></i>
+        </div>
+        <div class="flex-icon">
+            <i class="pi pi-linkedin" aria-hidden="true"></i>
+
+        </div>
+        <div class="flex-icon">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+
+        </div>
+
+    </div>
+
+
+    <div class="flex-toggle off-flex">
+        <div class="container-toggle dark-mode-container" (click)="toggleMode()">
+            <div class="toggle dark-mode-toggle"></div>
+
+        </div>
+
+    </div>
+
+    <div class="flex-info off-flex">
+        <span class="info-mode1 info-on">Dark</span>
+        <span class="info-mode2">Light</span>
+    </div>
+
+
+
+</nav>
+
+<!--             ==================  
+
+     -->
+
+<nav class="container-mobile menu-dark  menu-off">
+    <div class="menu-flex-mobile">
+        <i class="pi pi-times" style="font-size: 1.4rem" (click)="menuMode()"></i>
+        <div class="flex-toggle">
+            <div class="container-toggle dark-mode-container" (click)="toggleMode()">
+                <div class="toggle-mobile dark-mode-toggle"></div>
+
+            </div>
+            <div class="flex-info">
+
+                <span class="info-mode1-mobile info-on">Dark</span>
+                <span class="info-mode2-mobile">Light</span>
+            </div>
+           
+        </div>
+    </div>
+    <div class="flex-mobile margin">
+        <span>Início</span>
+
+    </div>
+
+    <div class="flex-mobile">
+        <span>Projetos</span>
+
+    </div>
+    <div class="flex-mobile">
+        <span>Experiência</span>
+
+    </div>
+
+    <div class="flex-mobile">
+        <span>Sobre mim</span>
+
+    </div>
+
+    <div class="contatos ">
+        <span class="text-contatos">Contatos:</span>
+        <div class="flex-icon">
+            <i class="pi pi-github"></i>
+        </div>
+        <div class="flex-icon">
+            <i class="pi pi-linkedin" aria-hidden="true"></i>
+
+        </div>
+        <div class="flex-icon">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+
+        </div>
+    </div>
+
+
+
+
+</nav>
