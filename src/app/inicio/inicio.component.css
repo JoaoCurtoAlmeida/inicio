@@ -72,9 +72,9 @@ img {
 .mac-3d {
     width: 90%;
     height: 90%;
-    min-width: auto;
+    min-width: 50%;
     /* Define um limite máximo para não esticar muito */
-    min-height: auto;
+    min-height: 50%;
 }
 
 .botao-container {
