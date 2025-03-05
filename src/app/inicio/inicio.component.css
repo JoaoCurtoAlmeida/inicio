@@ -6,13 +6,12 @@
     align-items: start;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     justify-content: space-around;
-   
-   
+    padding-top: 6%;
 }
 
 img {
-    max-width: 45px; 
-    max-height: 45px;
+    max-width: 25px;
+    max-height: 25px;
 }
 
 .flex {
@@ -22,17 +21,19 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: none;
-    margin-left: 5%;
+    margin-left: 10%;
     white-space: nowrap;
     margin-top: 9%;
 }
 
+
 .text1 {
-    font-size: 45px;
+    font-size: 25px;
     color: white;
     text-shadow: 1px;
-    font-weight: bold;
     padding: 1px;
+    font-weight: 100;
+
 }
 
 .flex img {
@@ -42,13 +43,23 @@ img {
 }
 
 .text2 {
-    font-weight: bold;
-    background-color: rgb(167, 163, 163);
-    text-transform: uppercase;
+    color: white;
+    font-size: 55px;
+}
+
+.text3 {
     color: white;
     padding-left: 5px;
     padding-right: 5px;
     border-radius: 1px;
+    font-size: 25px;
+    font-weight: 100;
+
+}
+
+.text3 span {
+    padding: 0px 5px;
+    background-color: rgb(149, 149, 149);
 }
 
 
@@ -61,7 +72,8 @@ img {
 .mac-3d {
     width: 90%;
     height: 90%;
-    min-width: auto; /* Define um limite máximo para não esticar muito */
+    min-width: auto;
+    /* Define um limite máximo para não esticar muito */
     min-height: auto;
 }
 
@@ -71,22 +83,27 @@ img {
     width: auto;
     height: auto;
     margin-top: 10px;
+    gap: 10px;
 }
 
 .botao1,
 .botao2 {
-    padding: 5px 15px;
+    padding: 5px 10px;
     margin: 5px;
     border-radius: 1px;
-    color: white;
+    background-color: white;
+    color: rgb(97, 97, 97);
     border: 2px white solid;
-    font-size: 18px;
+    font-size: 19px;
     cursor: pointer;
+    border-radius: 5px;
+    font-weight: lighter;
 }
 
 .botao1:hover,
 .botao2:hover {
-    background-color: rgba(255, 255, 255, 0.285);
+    border: 2px rgb(182, 182, 182) solid;
+
 }
 
 
@@ -101,11 +118,11 @@ img {
     .text1 {
         font-size: 40px;
         padding: 1px;
-        
+
     }
 
     .text2 {
-        
+
         padding-left: 5px;
         padding-right: 5px;
     }
@@ -113,7 +130,6 @@ img {
     .botao1,
     .botao2 {
         padding: 5px 15px;
-        margin: 5px;
         font-size: 17px;
     }
 
@@ -121,7 +137,7 @@ img {
 
 
     img {
-        max-width: 40px; 
+        max-width: 40px;
         max-height: 40px;
     }
 }
@@ -129,9 +145,9 @@ img {
 @media screen and (max-width: 1100px) {
 
     .text1 {
-        font-size: 35px;
+        font-size: 25px;
         padding: 1px;
-        
+
     }
 
     .text2 {
@@ -142,12 +158,11 @@ img {
     .botao1,
     .botao2 {
         padding: 5px 15px;
-        margin: 5px;
         font-size: 15px;
     }
 
     img {
-        max-width: 35px; 
+        max-width: 35px;
         max-height: 35px;
     }
 }
@@ -155,31 +170,33 @@ img {
 @media screen and (max-width: 960px) {
     .container {
         justify-content: start;
-        padding-left: 10px;
-      
+        padding-left: 15px;
+
     }
+
     .text1 {
-        font-size: 30px;
-        padding: 1px;
-        
+        font-size: 18px;
+
     }
 
     .text2 {
-        font-size: 30px;
+        font-size: 35px;
 
-        padding-left: 5px;
-        padding-right: 5px;
+
+    }
+
+    .text3 {
+        font-size: 18px;
     }
 
     .botao1,
     .botao2 {
         padding: 3px 10px;
-        margin: 5px;
         font-size: 15px;
     }
 
     img {
-        max-width: 25px; 
+        max-width: 25px;
         max-height: 25px;
     }
 
@@ -187,12 +204,12 @@ img {
 }
 
 @media screen and (max-width: 839px) {
-    
+
 
     .flex-3d {
         display: none;
     }
-    
+
 
 }
 
@@ -206,26 +223,28 @@ img {
 @media screen and (max-width: 500px) {
     .container {
         justify-content: start;
-        padding-top: 30%;
+        padding-top: 45%;
+        height: 100vw;
 
     }
 
     .flex {
         margin-left: 2%;
         margin-top: 0%;
+        gap: 12px;
     }
 
     .flex-3d {
         display: none;
     }
-    
-  
+
+
 
     .botao1,
     .botao2 {
-        padding: 5px 10px;
-        margin: 5px;
-        font-size: 16px;
+        padding: 7px 15px;
+        font-size: 17px;
+        margin: 1px;
     }
 
 

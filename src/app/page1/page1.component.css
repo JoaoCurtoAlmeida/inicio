@@ -2,6 +2,7 @@
 
 
 
+
 .container {
     display: flex;
     justify-content: center;
@@ -16,9 +17,10 @@
     z-index: 9999;
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;
-
+    
 
 }
+
 
 
 .flex {
@@ -42,10 +44,10 @@
 }
 
 .flex-nome span {
-    border: 2px var(--logo-name-color) solid;
+    border: 2px var(--text-color) solid;
     cursor: default;
     border-radius: 2px;
-    color: var(--logo-name-color);
+    color: var(--text-color);
     white-space: nowrap;
     padding: 5px 15px;
 }
@@ -105,9 +107,12 @@
 }
 
 
+
+
 .contatos {
     display: flex;
     font-size: 25px;
+    color: var(--text-color-menu-mobile);
 }
 
 .text-contatos {
@@ -150,7 +155,8 @@
     height: 21px;
     border-radius: 100px;
     background-color: rgba(255, 255, 255, 0.005);
-    transition: 0.2s ease-in;
+    transition:all 0.2s ease-in;
+
 }
 
 .light-mode-container {
@@ -249,46 +255,16 @@
 }
 
 .menu-on {
-    transform: translateX(116%);
+    transform: translateX(100%);
     display: flex;
 }
-
-
-
-.menu-light {
-    background-color: var(--logo-name-color);
-    box-shadow: 1px 1px 5px rgba(57, 57, 57, 0.149);
-    color: var(--text-color-light);
-}
-
-.menu-dark {
-    background: linear-gradient(45deg, #161328, #212237, #2a2353, #1d1e30);
-    background-size: 400% 400%;
-    animation: gradientAnimation 15s infinite ease-in-out;
-    color: var(--text-color);
-}
-
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
 
 
 .container-mobile {
     display: none;
     position: absolute;
     flex-direction: column;
-    width: 250px;
+    width: 290px;
     height: 100vh;
     padding-left: 20px;
     padding-right: 10px;
@@ -303,22 +279,22 @@
     top: 0;
     z-index: 9999;
     transition: transform 0.3s ease;
-
-}
-
-.background-menu-light {
-    background: linear-gradient(45deg, #97c9ed, #96bafd, #adcbde, #a0b9e1);
+    background: var(--background-menu-mobile);
     background-size: 400% 400%;
     animation: gradientAnimation 15s infinite ease-in-out;
+
 }
 
-.background-menu-dark {
-    background: linear-gradient(45deg, #161328, #212237, #2a2353, #1d1e30);
-    background-size: 400% 400%;
-    animation: gradientAnimation 15s infinite ease-in-out;
+.menu-flex-mobile {
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-color-menu-mobile);
 }
 
-.off-flex {}
+.off-flex {
+    animation: fadeIn 1s ease-in-out;
+
+}
 
 .on-scroll {
     opacity: 1;
@@ -330,6 +306,7 @@
 
 .flex-mobile {
     padding: 8px;
+    color: var(--text-color-menu-mobile);
 }
 
 .flex-mobile span {
@@ -390,15 +367,6 @@
 
     }
 
-    .menu-flex-mobile {
-        display: flex;
-
-        justify-content: space-between;
-
-    }
-
-
-
     .flex-icon {
         margin-left: 4px;
         margin-right: 4px;
@@ -441,10 +409,9 @@
         height: 21px;
         border-radius: 50px;
         margin-right: 5px;
-
+        
     }
 
-    .toggle,
     .toggle-mobile {
         width: 19px;
         height: 19.5px;
@@ -452,12 +419,12 @@
 
     .light-mode-toggle {
         transform: translateX(26.5px);
-
+        
     }
 
     .dark-mode-toggle {
         transform: translateX(0);
-
+        
     }
 
     .contatos {
@@ -533,3 +500,14 @@
     }
 
 }
+
+/*novos styles*/
+.background-menu-dark{
+    background: var(--background-menu-down-dark);
+}
+
+.background-menu-light{
+    background: var(--background-menu-down-light);
+}
+
+/*0000000000000000000000000000000000000*/
