@@ -1,6 +1,11 @@
 import { Component, ElementRef, AfterViewInit, ViewChild } from '@angular/core';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+
 import '@splinetool/viewer';
+
+
+
+
 
 document.addEventListener("DOMContentLoaded", () => {
   const splineViewer = document.querySelector('spline-viewer') as HTMLElement;
@@ -19,6 +24,8 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+
+
 @Component({
   selector: 'app-inicio',
   imports: [],
@@ -27,6 +34,6 @@ document.addEventListener("DOMContentLoaded", () => {
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class InicioComponent {
-
+ 
   
 }
