@@ -18,6 +18,7 @@
       background: var(--background-color-body);
       background-size: 400% 400%;
       animation: gradientAnimation 15s infinite ease-in-out;
+     
   }
 
   @keyframes gradientAnimation {

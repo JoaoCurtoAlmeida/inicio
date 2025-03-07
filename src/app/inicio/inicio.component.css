@@ -1,16 +1,25 @@
+
+
+
 .container-text {
     position: absolute;
-    top: 32%;
-    left: 8%;
-    z-index: 888;
+    display: grid;
+    place-items: center start;
+    width: 100%; /* Ocupar toda a largura disponível */
+    height: 300px; /* Ocupar toda a altura disponível */
+
+   
 }
 
 .flex {
     display: flex;
-    flex-direction: column;
-    padding: 5px;
+   
 }
 
+video {
+    width: 520px;
+    height: 520px;
+}
 img {
     max-width: 25px;
     max-height: 25px;
@@ -52,17 +61,21 @@ img {
     background-color: rgb(149, 149, 149);
 }
 
-
 .flex-3d {
-    width: 100vw;
-    height: 100vh;
-
+    width: 100%; /* Ocupar toda a largura disponível */
+    height: 100%; /* Ocupar toda a altura disponível */
+    max-width: 100vw; /* Não ultrapassar a largura da tela */
+    max-height: 100vh; /* Não ultrapassar a altura da tela */
+    display: flex; /* Melhor para responsividade */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
 }
 
-canvas {
-    width: 100vw;
-
+.flex-3d spline-viewer {
+    width: 100%;
+    min-height: 100%;
 }
+
 
 
 
@@ -97,12 +110,6 @@ canvas {
 
 
 @media screen and (max-width: 1500px) {
-
-    .container {
-        width: 100vw;
-    }
-
-
 
     .text1 {
         font-size: 40px;
@@ -156,12 +163,25 @@ canvas {
     }
 }
 
-@media screen and (max-width: 960px) {
-    .container {
-        justify-content: start;
-        padding-left: 15px;
+@media screen and (max-width: 1080px) {
+   
+}
 
+@media screen and (max-width: 1000px) {
+    
+
+  
+}
+
+@media screen and (max-width: 960px) {
+
+    .container-text {
+      position: relative;
+        
     }
+
+
+ 
 
     .text1 {
         font-size: 18px;
@@ -192,42 +212,29 @@ canvas {
 
 }
 
+@media screen and (max-width: 870px) {
+
+
+   
+
+
+}
+
 @media screen and (max-width: 839px) {
 
-
     .flex-3d {
         display: none;
     }
 
-
-}
-
-@media screen and (max-width: 750px) {
-    .container {
-        height: 40vh;
+    spline-viewer {
+        display: none;
     }
 
 }
+
+@media screen and (max-width: 750px) {}
 
 @media screen and (max-width: 500px) {
-    .container {
-        justify-content: start;
-        padding-top: 45%;
-        height: 100vw;
-
-    }
-
-    .flex {
-        margin-left: 2%;
-        margin-top: 0%;
-        gap: 12px;
-    }
-
-    .flex-3d {
-        display: none;
-    }
-
-
 
     .botao1,
     .botao2 {
