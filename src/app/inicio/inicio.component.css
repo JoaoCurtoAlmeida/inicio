@@ -2,6 +2,7 @@
     position: absolute;
     top: 32%;
     left: 8%;
+    z-index: 888;
 }
 
 .flex {
