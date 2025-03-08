@@ -1,39 +1,20 @@
-import { Component, ElementRef, AfterViewInit, ViewChild } from '@angular/core';
-import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-
-import '@splinetool/viewer';
-
-
-
-
-
-document.addEventListener("DOMContentLoaded", () => {
-  const splineViewer = document.querySelector('spline-viewer') as HTMLElement;
-
-  if (splineViewer && splineViewer.shadowRoot) {
-      const logo = splineViewer.shadowRoot.querySelector('#logo');
-      if (logo) {
-          logo.remove();
-          console.log("Logo removido com sucesso!");
-      } else {
-          console.log("Logo não encontrado.");
-      }
-  } else {
-      console.log("Elemento 'spline-viewer' não encontrado ou não possui Shadow DOM.");
-  }
-});
-
-
-
+import { Component, AfterViewInit, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-inicio',
-  imports: [],
-  templateUrl: './inicio.component.html',
-  styleUrl: './inicio.component.css',
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  templateUrl: './inicio.component.html', // Mantendo o HTML separado
+  styleUrls: ['./inicio.component.css']   // Corrigindo a propriedade
 })
-export class InicioComponent {
- 
+export class InicioComponent implements AfterViewInit {
   
+  @ViewChild('videoElement') video!: ElementRef<HTMLVideoElement>;
+
+  ngAfterViewInit() {
+    if (this.video) {
+      const video = this.video.nativeElement;
+      video.muted = true;
+      video.play().catch(error => console.error('Erro ao iniciar o vídeo:', error));
+    }
+  }
+
 }

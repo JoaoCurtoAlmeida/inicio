@@ -1,7 +1,7 @@
 <div class="container">
     <div class="container-text">
-        <div class="flex">
-            <a class="text1">Olá,<img src="../../assets/mao-emoji.png">Meu Nome é</a>
+        <div class="flex-text">
+            <a class="text1">Olá,<img class="img-class" src="../../assets/mao-emoji.png">Meu Nome é</a>
             <span class="text2">João Victor Curto,</span>
             <span class="text3">Angular front-end developer</span>
             <div class="botao-container">
@@ -12,17 +12,16 @@
         </div>
     </div>
 
-    <div class="flex">
-        <div class="video-container">
-            <video controls>
-              <source src="../../assets/mockup-macbook-pro-copy.webm" type="">
-              <!--<source src="seu-video.webm" type="video/webm">-->
-              Seu navegador não suporta a tag de vídeo.
+    <div class="container-video">
+
+        <div class="flex-video">
+            <video #videoElement [attr.autoplay]="'true'" muted playsinline>
+                <source src="assets/Macbook-Video.webm" type="video/webm">
+                Seu navegador não suporta vídeos WebM.
             </video>
-            
 
-
-        
+        </div>
     </div>
+
 
 </div>
