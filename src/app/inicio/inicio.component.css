@@ -12,6 +12,7 @@
     display: flex;
     width: 50vw;
     height: 100vh;
+      align-items: center;
 
 }
 
@@ -27,11 +28,11 @@
 
 .container-text {
     justify-content: center;
+    
 }
 
 .container-video {
     justify-content: end;
-
 
 
 
@@ -40,13 +41,13 @@
 
 .flex-text {
     justify-content: center;
-
+  
 
 
 }
 
 .flex-video {
-
+   
     align-self: end;
     width: 34vw;
     height: 72vh;
@@ -257,14 +258,13 @@ video {
     .container-text {
         width: 80vw;
         height: 80vh;
-        align-items: start;
+      
     }
 
     .flex-text {
         line-height: 1.5;
         justify-content: end;
-
-        height: 45%;
+        height: 45vh;
 
     }
 
@@ -272,20 +272,19 @@ video {
         display: none;
     }
 
-
 }
 
-@media screen and (max-width: 1000px) {}
+@media screen and (max-width: 1000px) {
+  
+}
 
 @media screen and (max-width: 960px) {
 
 
 
-
-    .container-video {
-        display: none;
+    .flex-text {
+        height: 50vh;
     }
-
 
 
     .text1 {

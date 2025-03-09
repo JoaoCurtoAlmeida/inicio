@@ -1,32 +1,49 @@
 <!--                  Web Containers                      -->
 
 
-<nav id="containerId" class="container ">
+<nav id="containerId" >
 
-    <!-- mobile -->
-    <div class="menu-flex" (click)="menuMode()">
-        <i class="pi pi-bars menu" style="font-size: 1.4rem"></i>
+
+
+    <p-toggleswitch [(ngModel)]="checked" />
+    <a class="logo" >João Victor Curto de Almeida</a>
+    <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+
+
 
     </div>
+    <ul class="nav-list" >
+        
+    <li><a class="inicio">Início</a></li>
+    <li><a>Projetos</a></li>
+    <li><a>Experiência</a></li>
+    
+    <li><a>Sobre mim</a></li>
 
-    <div class="container-nome">
-        <div class="flex-nome">
-            <span>João Victor Curto de Almeida</span>
+   
+
+ 
+
+    
+    
+
+</ul>
+    <!--
+
+    <div class="flex-toggle ">
+        <div class="container-toggle " (click)="toggleTheme()">
+            <div class="toggle dark-mode-toggle"></div>
+
         </div>
-    </div>
-    <div class="flex flex-inicio hover-right off-flex ">
-        <span>Início</span>
-    </div>
-    <div class="flex color-text border off-flex">
-        <span>Projetos</span>
-    </div>
-    <div class="flex color-text border off-flex">
-        <span>Experiência</span>
-    </div>
-    <div class="flex color-text border off-flex">
-        <span>Sobre mim</span>
-    </div>
 
+    </div>
+    <div class="flex-info">
+        <a class="info-mode1 info-on">Dark</a>
+        <a class="info-mode2">Light</a>
+    </div>
     <div class="contatos off-flex" style="color: var(--text-color)">
         <div class="flex-icon">
             <i class="pi pi-github"></i>
@@ -56,15 +73,23 @@
         <span class="info-mode2">Light</span>
     </div>
 
-
+-->
 
 </nav>
+
+
+
+
+
+
+
+
 
 <!--             ==================  
 
      -->
 
-<nav class="container-mobile  menu-off">
+<!-- <nav class="container-mobile  menu-off">
     <div class="menu-flex-mobile">
         <i class="pi pi-times" style="font-size: 1.4rem" (click)="menuMode()"></i>
         <div class="flex-toggle">
@@ -77,7 +102,7 @@
                 <span class="info-mode1-mobile info-on">Dark</span>
                 <span class="info-mode2-mobile">Light</span>
             </div>
-           
+
         </div>
     </div>
     <div class="flex-mobile margin">
@@ -117,4 +142,4 @@
 
 
 
-</nav>
+</nav>-->
