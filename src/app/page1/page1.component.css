@@ -248,7 +248,7 @@
     display: none;
     position: absolute;
     flex-direction: column;
-    width: 290px;
+    width: 289px;
     height: 100vh;
     padding-left: 20px;
     padding-right: 10px;
@@ -312,6 +312,8 @@
 
 }
 
+
+
 @media screen and (max-width: 1130px) {
     .container {
         font-size: 14px;
@@ -342,7 +344,7 @@
         align-items: center;
     }
 
-    .container-nome {}
+   
 
 
     .menu-flex {
