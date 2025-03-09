@@ -31,8 +31,8 @@
 
 .container-video {
     justify-content: end;
-   
-   
+
+
 
 
 }
@@ -51,7 +51,7 @@
     width: 34vw;
     height: 72vh;
     justify-content: start;
-   
+
 }
 
 
@@ -95,7 +95,6 @@ video {
 
 
 .botao-container {
-
     margin-top: 25px;
 
 }
@@ -103,9 +102,10 @@ video {
 
 
 .botao1 {
+    display: inline-block;
     padding: 5px 25px;
     margin: 5px;
-    border-radius: 1px;
+
     background-color: white;
     color: rgb(97, 97, 97);
     border: 2px white solid;
@@ -113,14 +113,16 @@ video {
     cursor: pointer;
     border-radius: 5px;
     font-weight: lighter;
+    transition: all 0.3s ease;
 
 
 }
 
 .botao2 {
+    display: inline-block;
     padding: 5px 15px;
     margin: 5px;
-    border-radius: 1px;
+
     background-color: white;
     color: rgb(97, 97, 97);
     border: 2px white solid;
@@ -128,13 +130,18 @@ video {
     cursor: pointer;
     border-radius: 5px;
     font-weight: lighter;
+    transition: all 0.3s ease;
 }
 
-.botao1:hover,
-.botao2:hover {
-    border: 2px rgb(182, 182, 182) solid;
+.botao1:active,
+.botao2:active {
+  
+    transform: scale(0.97);
+    /* Dá um efeito de clique */
 
 }
+
+
 
 
 @media screen and (max-width: 2250px) {

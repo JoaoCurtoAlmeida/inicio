@@ -17,7 +17,7 @@
     z-index: 9999;
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;
-    
+
 }
 
 
@@ -29,6 +29,9 @@
     margin-left: 15px;
     margin-right: 15px;
 }
+
+
+
 
 .flex-icon {
     background-color: transparent;
@@ -154,7 +157,7 @@
     height: 21px;
     border-radius: 100px;
     background-color: rgba(255, 255, 255, 0.005);
-    transition:all 0.2s ease-in;
+    transition: all 0.2s ease-in;
 
 }
 
@@ -266,7 +269,7 @@
     background: var(--background-menu-mobile);
     background-size: 400% 400%;
     animation: gradientAnimation 15s infinite ease-in-out;
-    
+
 
 }
 
@@ -282,9 +285,9 @@
 }
 
 .on-scroll {
-    
+
     position: fixed;
-    
+
 
 }
 
@@ -299,7 +302,7 @@
     cursor: pointer;
     padding: 5px;
     border-radius: 2px;
-    
+
 }
 
 .flex-mobile span:hover {
@@ -344,7 +347,7 @@
         align-items: center;
     }
 
-   
+
 
 
     .menu-flex {
@@ -398,7 +401,7 @@
         height: 20.2px;
         border-radius: 50px;
         margin-right: 5px;
-        
+
     }
 
     .toggle-mobile {
@@ -408,12 +411,12 @@
 
     .light-mode-toggle {
         transform: translateX(26.6px);
-        
+
     }
 
     .dark-mode-toggle {
         transform: translateX(0);
-        
+
     }
 
     .contatos {
@@ -491,18 +494,18 @@
 }
 
 /*novos styles*/
-.background-menu-dark{
+.background-menu-dark {
     background: var(--background-menu-down-dark);
     background-size: 400% 400%;
     animation: gradientAnimation 15s infinite ease-in-out;
-   
+
 }
 
-.background-menu-light{
+.background-menu-light {
     background: var(--background-menu-down-light);
     background-size: 400% 400%;
     animation: gradientAnimation 15s infinite ease-in-out;
-    
+
 }
 
 

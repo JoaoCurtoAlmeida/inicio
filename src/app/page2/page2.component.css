@@ -3,7 +3,7 @@
     justify-items: center;
     justify-content: center;
     width: 100%;
-    background-color:var( --background-color-card);
+    background-color: var(--background-color-card);
 
 }
 
@@ -33,69 +33,75 @@
     padding-top: 50px;
     padding-left: 20px;
     padding-right: 20px;
-    border: 1px rgba(0, 0, 0, 0.125) solid;
-    background-color: var(--background-color-card-mensagem);
-    border-radius: 5px;
+
+   
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.075);
+    border-radius: 10px;
 }
 
 .contatos {
     display: flex;
-    justify-content:start; /* Alinha horizontalmente */
+    justify-content: start;
+    /* Alinha horizontalmente */
     align-items: center;
     padding: 5px;
     margin-top: 15px;
     
+
 }
+
 .curriculo {
-    border: 1px rgb(71, 71, 71) solid;
+
     padding: 5px 10px;
-    border-radius: 3px;
+    border-radius: 7px;
     cursor: pointer;
+   
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.156);
+    color: rgba(14, 14, 14, 0.599);
     transition: all 0.3s ease;
-    background-color:var(--background-color-card-mensagem);
-    color: rgba(1, 1, 1, 0.79);
+
 }
 
-.curriculo:hover {
-    background-color: rgba(173, 173, 173, 0.067);
-}
 
- .pi-github, .pi-linkedin, .fa-envelope {
+.curriculo:active {
+    transform: scale(0.97); /* Dá um efeito de clique */
+  }
+
+.pi-github,
+.pi-linkedin,
+.fa-envelope {
     font-size: 25px;
     color: rgb(71, 71, 71);
     padding: 5px;
     margin-left: 5px;
     margin-left: 5px;
     cursor: pointer;
+    
 }
 
 
 .img-joao {
     width: 220px;
     height: 220px;
-    border: 5px rgba(0, 0, 0, 0.121) solid;
     object-fit: cover;
     border-radius: 100%;
 
-
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.803);
 }
 
-.borda-img {
-    display: block;
-    padding: 5px;
 
-}
 
 .text1 {
     display: block;
-    color: rgba(14, 14, 14, 0.847);
     font-size: 27px;
     font-weight: bold;
     margin-bottom: 15px;
+    color: var(--text1-card);
+
 }
 
 .text2 {
-    color: rgba(1, 1, 1, 0.784);
+    color: var(--text2-card);
     font-size: 18px;
 
 }
@@ -103,9 +109,7 @@
 
 
 @media screen and (max-width: 960px) {
-    .container {
-        
-    }
+    .container {}
 
     .container-flex {
         flex-direction: column;
@@ -144,10 +148,15 @@
 
         padding-top: 30px;
     }
+
     .contatos {
-        
-        justify-content:center; /* Alinha horizontalmente */
-       
+
+        justify-content: center;
+        /* Alinha horizontalmente */
+    }
+
+    .curriculo {
+        padding: 8px 13px;
         
     }
 }
