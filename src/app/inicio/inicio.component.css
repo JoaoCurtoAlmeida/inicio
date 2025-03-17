@@ -1,7 +1,7 @@
 /* Configurações Base */
 
 .container {
-    display: flex;
+  display: flex;
 
 }
 
@@ -9,17 +9,17 @@
 
 .container-text,
 .container-video {
-    display: flex;
-    width: 50vw;
-    height: 100vh;
-      align-items: center;
+  display: flex;
+  width: 50vw;
+  height: 100vh;
+  align-items: center;
 
 }
 
 .flex-text,
 .flex-video {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
 
 }
@@ -27,12 +27,12 @@
 /*  ============================================ */
 
 .container-text {
-    justify-content: center;
-    
+  justify-content: center;
+
 }
 
 .container-video {
-    justify-content: end;
+  justify-content: end;
 
 
 
@@ -40,105 +40,103 @@
 
 
 .flex-text {
-    justify-content: center;
-  
+  justify-content: center;
+
 
 
 }
 
 .flex-video {
-   
-    align-self: end;
-    width: 34vw;
-    height: 72vh;
-    justify-content: start;
+
+  align-self: end;
+  width: 34vw;
+  height: 72vh;
+  justify-content: start;
 
 }
 
 
 
 video {
-    width: 600px;
-    height: 600px;
+  width: 600px;
+  height: 600px;
 
 }
 
 
 
 .text1 {
-    font-size: 25px;
-    color: white;
-    text-shadow: 1px;
+  font-size: 25px;
+  color: white;
+  text-shadow: 1px;
 
-    font-weight: 100;
+  font-weight: 100;
 
 }
 
 
 
 .text2 {
-    color: white;
-    font-size: 60px;
+  color: white;
+  font-size: 60px;
 }
 
 .text3 {
-    color: white;
-    font-size: 25px;
-    font-weight: 100;
+  color: white;
+  font-size: 25px;
+  font-weight: 100;
 
 }
 
 .text3 span {
-    padding: 0px 5px;
-    background-color: rgb(149, 149, 149);
+  padding: 0px 5px;
+  background-color: rgb(149, 149, 149);
 }
 
 
 
 .botao-container {
-    margin-top: 25px;
+  display: flex;
+  margin-top: 25px;
+  gap: 7px;
 
 }
 
 
 
 .botao1 {
-    display: inline-block;
-    padding: 5px 25px;
-    margin: 5px;
-
-    background-color: white;
-    color: rgb(97, 97, 97);
-    border: 2px white solid;
-    font-size: 18px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-weight: lighter;
-    transition: all 0.3s ease;
+  display: inline-block;
+  padding: 5px 25px;
+  background-color: white;
+  color: rgb(97, 97, 97);
+  border: 2px white solid;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: lighter;
+  transition: all 0.3s ease;
 
 
 }
 
 .botao2 {
-    display: inline-block;
-    padding: 5px 15px;
-    margin: 5px;
-
-    background-color: white;
-    color: rgb(97, 97, 97);
-    border: 2px white solid;
-    font-size: 18px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-weight: lighter;
-    transition: all 0.3s ease;
+  display: inline-block;
+  padding: 5px 15px;
+  background-color: white;
+  color: rgb(97, 97, 97);
+  border: 2px white solid;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: lighter;
+  transition: all 0.3s ease;
 }
 
 .botao1:active,
 .botao2:active {
-  
-    transform: scale(0.97);
-    /* Dá um efeito de clique */
+
+  transform: scale(0.97);
+  /* Dá um efeito de clique */
 
 }
 
@@ -147,20 +145,20 @@ video {
 
 @media screen and (max-width: 2250px) {
 
-    video {
-        width: 530px;
-        height: 530px;
-    }
+  video {
+    width: 530px;
+    height: 530px;
+  }
 }
 
 
 
 @media screen and (max-width: 2050px) {
 
-    video {
-        width: 520px;
-        height: 520px;
-    }
+  video {
+    width: 520px;
+    height: 520px;
+  }
 }
 
 
@@ -169,151 +167,145 @@ video {
 
 @media screen and (max-width: 1750px) {
 
-    video {
-        width: 500px;
-        height: 500px;
-    }
+  video {
+    width: 500px;
+    height: 500px;
+  }
 }
 
 
 @media screen and (max-width: 1650px) {
 
-    video {
-        width: 490px;
-        height: 490px;
-    }
+  video {
+    width: 490px;
+    height: 490px;
+  }
 }
 
 @media screen and (max-width: 1500px) {
 
-    video {
-        width: 420px;
-        height: 520px;
-    }
+  video {
+    width: 420px;
+    height: 520px;
+  }
 }
 
 @media screen and (max-width: 1370px) {
-    .flex-video {
-        justify-content: center;
-    }
+  .flex-video {
+    justify-content: center;
+  }
 
-    video {
-        width: 400px;
-        height: 400px;
-    }
+  video {
+    width: 400px;
+    height: 400px;
+  }
 }
 
 @media screen and (max-width: 1130px) {
+  .container {
+    align-items: center;
+    justify-content: center;
 
+  }
 
-    .flex-text,
-    .flex-video {
-        width: 100%;
-        height: 35%;
-    }
-
-    .flex-video {
-        align-items: end;
-        justify-content: start;
-
-    }
-
-    video {
-        width: 380px;
-        height: 380px;
-    }
-
-    .text1 {
-        font-size: 20px;
-
-
-    }
-
-    .text2 {
-        font-size: 40px;
-
-    }
-
-    .text3 {
-        font-size: 20px;
-
-    }
+  .container-text {
+    width: 100vw;
+    height: 50vh;
+    justify-content: center;
 
 
 
-    img {
-        max-width: 35px;
-        max-height: 35px;
-    }
+  }
+
+  .flex-text {
+    line-height: 1.5;
+    justify-content: end;
+    height: 45vh;
+
+  }
+
+  .flex-text {
+    width: 100%;
+    height: 35%;
+  }
+
+
+  video {
+    width: 350px;
+    height: 350px;
+  }
+
+  .text1 {
+    font-size: 20px;
+
+
+  }
+
+  .text2 {
+    font-size: 40px;
+
+  }
+
+  .text3 {
+    font-size: 20px;
+
+  }
+
+
+
+  img {
+    max-width: 35px;
+    max-height: 35px;
+  }
 }
 
-@media screen and (max-width: 1130px) {
 
-    .container {
-        height: 100vh;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .container-text {
-        width: 80vw;
-        height: 80vh;
-      
-    }
-
-    .flex-text {
-        line-height: 1.5;
-        justify-content: end;
-        height: 45vh;
-
-    }
-
-    .container-video {
-        display: none;
-    }
-
-}
-
-@media screen and (max-width: 1000px) {
-  
-}
 
 @media screen and (max-width: 960px) {
 
-
-
-    .flex-text {
-        height: 50vh;
-    }
-
-
-    .text1 {
-        font-size: 18px;
+  .container {
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
 
     }
 
-    .text2 {
-        font-size: 35px;
+  .flex-text {
+    height: 27vh;
+    width: 45vh;
+
+  }
+  .container-video {
+    display: none;
+  }
+
+  .text1 {
+    font-size: 18px;
+
+  }
+
+  .text2 {
+    font-size: 35px;
 
 
-    }
+  }
 
-    .text3 {
-        font-size: 18px;
-    }
+  .text3 {
+    font-size: 18px;
+  }
 
-    .botao1,
-    .botao2 {
-        padding: 7px 15px;
-        font-size: 17px;
+  .botao1,
+  .botao2 {
+    padding: 7px 15px;
+    font-size: 17px;
 
 
-    }
+  }
 
-    img {
-        max-width: 25px;
-        max-height: 25px;
-    }
+  img {
+    max-width: 25px;
+    max-height: 25px;
+  }
 
 
 }
@@ -325,16 +317,16 @@ video {
 @media screen and (max-width: 750px) {}
 
 @media screen and (max-width: 600px) {
-    .container-text {
+  .container-text {
 
-        align-items: start;
-    }
+    align-items: start;
+  }
 
-    .flex-text {
-        line-height: 1.5;
-        justify-content: end;
+  .flex-text {
+    line-height: 1.5;
+    justify-content: end;
 
-        height: 45%;
 
-    }
+
+  }
 }

@@ -8,6 +8,7 @@
     background: var( --background-menu);
     background-size: 400% 400%; /* Estabelece o tamanho inicial do gradiente */
     animation: gradientAnimation 15s infinite ease-in-out;
+
 }
 
 
@@ -29,9 +30,10 @@ nav {
     /* Distribui os elementos */
     align-items: center;
     z-index: 9999;
-    height: 9vh;
+    height: 60px;
     width: 100vw;
     padding: 0 150px;
+
 }
 
 
@@ -183,7 +185,7 @@ li a:hover {
     }
     a {
         font-size: 17px;
-        
+
     }
 
 
@@ -194,7 +196,7 @@ li a:hover {
 
 .nav-list.active {
     transform: translateX(0);
-    
+
 }
 
 .pi-moon, .pi-sun {
