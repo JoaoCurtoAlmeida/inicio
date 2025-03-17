@@ -49,17 +49,11 @@ export class Page1Component implements OnInit, OnDestroy {
     this.renderer.removeClass(document.body, 'light-theme');
     this.renderer.addClass(document.body, themeClass);
     this.activeScroll();
-  }
 
+  }
   private activeScroll = () => {
     if (!this.menu) return;
-    if (window.scrollY > 0) {
-      this.menu.classList.add('on-scroll');
-      this.menu.classList.remove('off-scroll');
-    } else {
-      this.menu.classList.remove('off-scroll');
-      this.menu.classList.add('on-scroll');
-    }
+
 
     if (this.isDarkMode) {
       this.menu.classList.add('background-menu-dark');
@@ -68,12 +62,12 @@ export class Page1Component implements OnInit, OnDestroy {
       this.menu.classList.add('background-menu-light');
       this.menu.classList.remove('background-menu-dark');
     }
-
-    if (window.scrollY === 0) {
+  
+    if (window.scrollY == 0) {
       this.menu.classList.remove('background-menu-dark', 'background-menu-light');
     }
-  }
-
+  };
+  
   private ModoMenuDarkLight() {
     const myDivMoon = this.el.nativeElement.querySelector('.moon');
     const myDivSun = this.el.nativeElement.querySelector('.sun');
@@ -137,4 +131,6 @@ class MobileNavbar {
     }
     return this;
   }
+
+  
 }

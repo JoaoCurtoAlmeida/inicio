@@ -4,13 +4,10 @@
 
 
 
-.background-menu-dark {
-    background: red;
-}
-
-.background-menu-light {
-    background: pink;
-
+.background-menu-dark, .background-menu-light {
+    background: var( --background-menu);
+    background-size: 400% 400%; /* Estabelece o tamanho inicial do gradiente */
+    animation: gradientAnimation 15s infinite ease-in-out;
 }
 
 
@@ -26,13 +23,14 @@
 
 nav {
     display: flex;
-    position: sticky;
+    position: fixed;
     top: 0;
     justify-content: space-between;
     /* Distribui os elementos */
     align-items: center;
     z-index: 9999;
     height: 9vh;
+    width: 100vw;
     padding: 0 100px;
 }
 
@@ -143,15 +141,16 @@ li a:hover {
         height: 7vh;
         justify-content: center;
         align-items: center;
-
+        padding: 0;
     }
 
     .nav-list {
         position: absolute;
         top: 7vh;
         right: 0;
-        width: 60vw;
+        width: 250px;
         height: 93vh;
+        padding-top: 25px;
         background: #23232e;
         flex-direction: column;
         justify-content: start;
