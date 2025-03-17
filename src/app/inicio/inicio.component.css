@@ -225,7 +225,7 @@ video {
   }
 
   .flex-text {
-    width: 100%;
+    width: 90%;
     height: 35%;
   }
 
@@ -272,7 +272,8 @@ video {
 
   .flex-text {
     height: 27vh;
-    width: 45vh;
+    width: 85vw;
+    justify-content: start;
 
   }
   .container-video {

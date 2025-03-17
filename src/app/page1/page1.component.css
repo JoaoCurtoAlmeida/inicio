@@ -14,7 +14,7 @@
 
 
 .logo {
-    font-size: 15px;
+    font-size: 11px;
     text-transform: uppercase;
     border: 1px white solid;
     padding: 5px 12px;
@@ -32,8 +32,8 @@ nav {
     z-index: 9999;
     height: 60px;
     width: 100vw;
-    padding: 0 150px;
-
+    padding: 0 15%;
+    white-space: nowrap;
 }
 
 
@@ -136,6 +136,27 @@ li a:hover {
 }
 
 
+@media (max-width: 1299px) {
+  .container {
+    padding: 0 10%;
+  }
+
+
+
+}
+
+
+@media (max-width: 1130px) {
+  .container {
+    padding: 0 5%;
+  }
+
+  li a {
+    font-size: 14px;
+  }
+
+
+}
 
 
 @media (max-width: 999px) {
