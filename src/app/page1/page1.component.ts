@@ -39,13 +39,13 @@ export class Page1Component implements OnInit, OnDestroy {
     
     this.themeService.setTheme(newTheme);
     this.applyTheme();
+    this.ModoMenuDarkLight();
   }
 
   
 
   private applyTheme() {
     const themeClass = this.isDarkMode ? 'dark-theme' : 'light-theme';
-    this.renderer.removeClass(document.body, 'dark-theme');
     this.renderer.removeClass(document.body, 'light-theme');
     this.renderer.addClass(document.body, themeClass);
     this.activeScroll();
@@ -74,13 +74,21 @@ export class Page1Component implements OnInit, OnDestroy {
     }
   }
 
-  private MenuModeActions() {
-    const myDivMenu = this.el.nativeElement.querySelector('.container-mobile');
+  private ModoMenuDarkLight() {
+    const myDivMoon = this.el.nativeElement.querySelector('.moon');
+    const myDivSun = this.el.nativeElement.querySelector('.sun');
+
     this.isOpenMode = !this.isOpenMode;
     if (this.isOpenMode) {
-      this.renderer.addClass(myDivMenu, 'menu-on');
+      this.renderer.addClass(myDivMoon, 'off-icon-mode');
+      this.renderer.addClass(myDivSun, 'on-icon-mode');
+
     } else {
-      this.renderer.removeClass(myDivMenu, 'menu-on');
+      this.renderer.removeClass(myDivSun, 'on-icon-mode');
+      this.renderer.removeClass(myDivMoon, 'off-icon-mode');
+
+
+
     }
   }
 }
