@@ -35,47 +35,13 @@ export class Page1Component implements OnInit, OnDestroy {
 
   toggleTheme() {
     const newTheme = this.isDarkMode ? 'dark-theme' : 'light-theme';
-
-    this.ToggleMode();
+    this.isDarkMode = !this.isDarkMode;
+    
     this.themeService.setTheme(newTheme);
     this.applyTheme();
   }
 
-  menuMode() {
-    this.MenuModeActions();
-  }
-
-  private ToggleMode() {
-    this.isDarkMode = !this.isDarkMode;
-
-    const myDivToggle = this.el.nativeElement.querySelector('.toggle');
-    const myDivInfoMode1 = this.el.nativeElement.querySelector('.info-mode1');
-    const myDivInfoMode2 = this.el.nativeElement.querySelector('.info-mode2');
-
-    const myDivToggleMobile = this.el.nativeElement.querySelector('.toggle-mobile');
-    const myDivInfoMobileMode1 = this.el.nativeElement.querySelector('.info-mode1-mobile');
-    const myDivInfoMobileMode2 = this.el.nativeElement.querySelector('.info-mode2-mobile');
-
-    if (!this.isDarkMode) {
-      this.renderer.removeClass(myDivToggle, 'dark-mode-toggle');
-      this.renderer.addClass(myDivToggle, 'light-mode-toggle');
-      this.renderer.removeClass(myDivToggleMobile, 'dark-mode-toggle');
-      this.renderer.addClass(myDivToggleMobile, 'light-mode-toggle');
-      this.renderer.removeClass(myDivInfoMode1, 'info-on');
-      this.renderer.addClass(myDivInfoMode2, 'info-on');
-      this.renderer.removeClass(myDivInfoMobileMode1, 'info-on');
-      this.renderer.addClass(myDivInfoMobileMode2, 'info-on');
-    } else {
-      this.renderer.removeClass(myDivToggle, 'light-mode-toggle');
-      this.renderer.addClass(myDivToggle, 'dark-mode-toggle');
-      this.renderer.removeClass(myDivToggleMobile, 'light-mode-toggle');
-      this.renderer.addClass(myDivToggleMobile, 'dark-mode-toggle');
-      this.renderer.removeClass(myDivInfoMode2, 'info-on');
-      this.renderer.addClass(myDivInfoMode1, 'info-on');
-      this.renderer.removeClass(myDivInfoMobileMode2, 'info-on');
-      this.renderer.addClass(myDivInfoMobileMode1, 'info-on');
-    }
-  }
+  
 
   private applyTheme() {
     const themeClass = this.isDarkMode ? 'dark-theme' : 'light-theme';

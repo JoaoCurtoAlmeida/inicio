@@ -1,11 +1,10 @@
 <!--                  Web Containers                      -->
 
 
-<nav id="containerId" >
+<nav id="containerId" class="container">
 
 
 
-    <p-toggleswitch [(ngModel)]="checked" />
     <a class="logo" >João Victor Curto de Almeida</a>
     <div class="mobile-menu">
         <div class="line1"></div>
@@ -23,27 +22,20 @@
     
     <li><a>Sobre mim</a></li>
 
-   
+        <div class="container-mode" (click)="toggleTheme()">
+            <div class="mode">
+                <i class="pi pi-moon "></i>
+                <i class="pi pi-sun"></i>
 
- 
 
-    
-    
-
-</ul>
-    <!--
-
-    <div class="flex-toggle ">
-        <div class="container-toggle " (click)="toggleTheme()">
-            <div class="toggle dark-mode-toggle"></div>
-
+            </div>
         </div>
 
-    </div>
-    <div class="flex-info">
-        <a class="info-mode1 info-on">Dark</a>
-        <a class="info-mode2">Light</a>
-    </div>
+   
+
+</ul>
+
+    <!--
     <div class="contatos off-flex" style="color: var(--text-color)">
         <div class="flex-icon">
             <i class="pi pi-github"></i>
