@@ -15,11 +15,13 @@
 
 
   --color-toggle-mode: rgb(249, 249, 249);
+  --color-toggle-mode-mobile: rgb(249, 249, 249);
+
   --background-color: #121212;
   --text-color: #ffffff;
   --text1-card: rgba(14, 14, 14, 0.79);
   --text2-card: rgba(14, 14, 14, 0.737);
-  --text-color-menu-mobile: #ffffff;
+  --text-color-mobile-a: #ffffff;
   --background-color-body: linear-gradient(45deg, #161328, #212237, #2a2353, #1d1e30);
   --background-menu: linear-gradient(45deg, #161328, #212237, #2a2353, #1d1e30);
   --background-menu-mobile: linear-gradient(45deg, #161328, #212237, #2a2353, #1d1e30);
@@ -31,8 +33,11 @@
 // Tema claro
 .light-theme {
   --color-toggle-mode: rgb(251, 251, 134);
+  --color-toggle-mode-mobile: rgb(230, 230, 45);
+
   --background-color: #ffffff;
   --text-color: #ffffff;
+  --text-color-mobile-a: rgb(105, 105, 105);
   --text1-card: rgba(14, 14, 14, 0.686);
   --text2-card: rgba(14, 14, 14, 0.599);
   --background-color-body: linear-gradient(45deg, #0d92f16c, #4b8aff99, #adcbdeec, #a0b9e1);

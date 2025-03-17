@@ -31,7 +31,7 @@ nav {
     z-index: 9999;
     height: 9vh;
     width: 100vw;
-    padding: 0 100px;
+    padding: 0 150px;
 }
 
 
@@ -59,7 +59,7 @@ main {
 
 
 a {
-    color: #fff;
+    color: var(--text-color);
     text-decoration: none;
     transition: 0.3s;
     padding: 5px;
@@ -151,7 +151,9 @@ li a:hover {
         width: 250px;
         height: 93vh;
         padding-top: 25px;
-        background: #23232e;
+        background: var(--background-menu-mobile);
+        background-size: 300% 300%; /* Estabelece o tamanho inicial do gradiente */
+        animation: gradientAnimation 15s infinite ease-in-out;
         flex-direction: column;
         justify-content: start;
         align-items: start;
@@ -176,9 +178,12 @@ li a:hover {
         padding-left: 20px;
 
     }
-
+    li a {
+        color: var(--text-color-mobile-a)
+    }
     a {
         font-size: 17px;
+        
     }
 
 
@@ -189,6 +194,11 @@ li a:hover {
 
 .nav-list.active {
     transform: translateX(0);
+    
+}
+
+.pi-moon, .pi-sun {
+    color: var(--color-toggle-mode-mobile);
 }
 
 @keyframes navLinkFade {
