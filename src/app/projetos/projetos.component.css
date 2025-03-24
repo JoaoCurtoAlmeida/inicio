@@ -1,11 +1,13 @@
+
+
 .container-titulo {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 11vh;
-  margin-top: 20px;
-  margin-bottom: 50px;
+
+  margin-top: 50px;
+
 }
 
 .titulo {
@@ -23,8 +25,8 @@
   gap: 15px;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 100vh;
+  margin-top: 60px;
+  margin-bottom: 50px;
   flex-wrap: wrap;
 }
 

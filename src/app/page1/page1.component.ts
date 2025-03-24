@@ -36,13 +36,13 @@ export class Page1Component implements OnInit, OnDestroy {
   toggleTheme() {
     const newTheme = this.isDarkMode ? 'dark-theme' : 'light-theme';
     this.isDarkMode = !this.isDarkMode;
-    
+
     this.themeService.setTheme(newTheme);
     this.applyTheme();
     this.ModoMenuDarkLight();
   }
 
-  
+
 
   private applyTheme() {
     const themeClass = this.isDarkMode ? 'dark-theme' : 'light-theme';
@@ -62,12 +62,14 @@ export class Page1Component implements OnInit, OnDestroy {
       this.menu.classList.add('background-menu-light');
       this.menu.classList.remove('background-menu-dark');
     }
-  
+
     if (window.scrollY == 0) {
       this.menu.classList.remove('background-menu-dark', 'background-menu-light');
+
     }
+    console.log(window.screenY);
   };
-  
+
   private ModoMenuDarkLight() {
     const myDivMoon = this.el.nativeElement.querySelector('.moon');
     const myDivSun = this.el.nativeElement.querySelector('.sun');
@@ -132,5 +134,5 @@ class MobileNavbar {
     return this;
   }
 
-  
+
 }
